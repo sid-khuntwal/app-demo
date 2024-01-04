@@ -55,13 +55,13 @@ const Card = ({ product }) => {
             {description?.replace(/[:;]/g, "").substring(0, 100).trim()}
           </div>
 
-          <div className="card-description-hover">
+          <div className="card-description-hover hovered">
             <div className="product-details-hover">{title?.replace(/\[SEP\]/g, "").substring(0, 100).trim()}</div>
             <div className="product-description-hover">
               <ul>
                 {descriptionPoints.map((point, index) => (
                   // Use index as key, but ensure each point is unique
-                  <li key={`${point}-${index}`}>
+                  <li className="list-item" key={`${point}-${index}`}>
                     {point}
                   </li>
                 ))}
