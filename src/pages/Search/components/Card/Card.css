@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400&display=swap');
+
+​.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  flex: 1 1 21rem;
+  position: relative;
+  background-color: rgba(255, 255, 255);
+  margin: 10px;
+  border-radius: 5px;
+  max-width: 20%;
+  /* max-width: 200px; */
+  /* height: 370px; */
+  padding: 10px;
+  box-shadow: 0px 4px 25px 4px rgba(0, 0, 0, 0.06);
+  transition:  0.3s ease-in-out;
+
+  border: 1px solid #ffff;
+  border-radius: 12px;
+  /* border: 1px solid black; */
+ align-self: normal;
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+ margin-bottom: 24px;
+/* flex-shrink: 0; */
+}
+
+.score {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.card-title {
+ color: #000;
+margin-top: 5px;
+font-family: DM Sans;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+.other {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.card-text.short {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* number of lines to show */
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  margin-bottom: 0;
+}
+
+.angle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.more {
+  position: absolutes;
+}
+
+.product-image {
+  /* width: 100%;
+  
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 10px; */
+  /* width: 100%;
+border-radius: 8px;
+  margin-top: 5px;
+  height: auto;
+  align-items: center; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.product-image img{
+  width: 100%;
+}
+
+/*  */
+.card-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding-left: 5px;
+}
+
+.card-description {
+/* font-size: 12px; */
+/* font-weight: 400; */
+/* margin-top: auto; */
+  margin-top: 2px;
+  /* line-height: 15.62px; */
+  color: var(--50-black, rgba(47, 48, 55, 0.50));
+    font-family: 'DM Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* white-space: nowrap; */
+     
+        display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+}
+
+.card-price {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  line-height: normal;
+  font-style: normal;
+  font-family: 'DM Sans';
+}
+
+.card-body:hover {
+  z-index: 1;
+  transform: scale(1.2);
+  transform-origin: center center;
+
+}
+
+.card-body:not(:hover) {
+  z-index: 0; 
+  transform: scale(1);
+}
+
+.card-body:hover .card-title {
+  display: none;
+  /* Ensure the image takes full height on hover */
+}
+
+.card-body:hover .card-price {
+  display: none;
+  /* Ensure the image takes full height on hover */
+}
+.card-body:hover .card-description{
+  display: none;
+}
+/* .card-body:hover .card-description-hover{
+  font-size: 16px;
+  font-weight: 500;
+  display: block;
+  margin-top: auto;
+  margin-bottom: 5px;
+} */
+
+.card-description-hover{
+display: none;
+
+}
+
+.card-description-hover{
+  height: 20px;
+}
+.card-body:hover .card-description-hover{
+  display: block;
+  height: 100px;
+}
+
+.card-body:hover .card-description-hover .product-details-hover{
+color: #000;
+  margin-top: 5px;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+    display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+}
+
+.card-body .card-description-hover .product-description-hover{
+  color: var(--50-black, rgba(47, 48, 55, 0.50));
+    font-family: 'DM Sans';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-description-hover ul,
+.card-description-hover .product-details-hover {
+  margin: 0;
+  padding: 0;
+}
+
+.card-description-hover ul{
+  margin: 2px 0 0 12px;
+    padding: 0;
+    /* this */
+    /* max-height: 40px; */
+      overflow: hidden;
+      position: relative;
+      list-style-type: disc !important;
+      list-style-position: outside;
+        /* list-style: inside; */
+}
+/* .card-body:hover .card-description-hover ul::after {
+  content: '...';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffffff);
+ 
+} */
+.card-body:hover .card-description-hover ul {
+  max-height: 100%;
+  /* Allow full height on hover */
+ 
+}
+/* this */
+.card-body:hover .product-image {
+  /* width: 300px; */
+  /* transition: 0.1s; */
+  /* width: calc(100% -30px ); */
+  height: calc(100% - 30px);
+  /* height: 250px; */
+  
+  /* object-fit: contain; */
+}
+
+
+

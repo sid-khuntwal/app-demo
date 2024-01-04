@@ -1,0 +1,202 @@
+.search-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  
+  padding: 10px;
+}
+
+.searchbar-search {
+  flex: 1;
+  margin-right: 50px;
+}
+.zevi-logo {
+  width: 80px;
+  height: 100%;
+  padding-bottom: 8px;
+  margin-left: 10px;
+  padding-right: 26px;
+  cursor: pointer;
+  /* border-right: 1px solid #ccc; */
+}
+
+form {
+  height: 44px;
+  background-color: white;
+  display: flex;
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border-radius: 100px;
+  font-size: 70px;
+  padding: 0 10px 0 20px;
+}
+
+input[type="search"] {
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: large;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: none;
+  flex: 1;
+  height: 45px;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+input[type="button"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0px;
+  border: 1px solid transparent;
+  border-radius: none;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='60' class='bi bi-search' viewBox='4 -12 10 40'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+button[type="submit"]:hover {
+  opacity: 1;
+}
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  outline: none;
+}
+
+.results-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.search-filters {
+  width: 15vw;
+  height: available;
+  padding-left: 40px;
+}
+
+.brands-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: "500";
+  margin-bottom: 5px;
+}
+
+.search-results {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.search-results>* {
+  margin-bottom: 5px;
+  /* Adjust the value as needed */
+}
+
+.ratings-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.config {
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.config-section {
+  display: flex;
+  flex-direction: row;
+  margin: 0 10px;
+}
+
+.config-title {
+  margin-right: 10px;
+}
+
+.config-desc {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .search-area {
+    flex-direction: column;
+  }
+
+  .config {
+    flex-direction: column;
+  }
+
+  .config-section:nth-child(2),
+  .config-desc {
+    margin-top: 20px;
+  }
+
+  .config-desc {
+    padding-top: 12 px;
+    border-top: 1px solid rgb(209, 209, 209);
+  }
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 50px;
+}
+
+.heading{
+  color: #000;
+  
+    font-family: DM Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 26px;
+}
+
+.sub-heading {
+  align-self: flex-start;
+  margin-left: 10px;
+  color: rgba(18, 18, 18, 0.80);
+  
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
