@@ -23,7 +23,8 @@
  align-self: normal;
  display: flex;
  flex-direction: column;
- overflow: hidden;
+ /* overflow: visible; */
+ /* height: auto; */
  margin-bottom: 24px;
 /* flex-shrink: 0; */
 }
@@ -136,7 +137,6 @@ border-radius: 8px;
   z-index: 1;
   transform: scale(1.2);
   transform-origin: center center;
-
 }
 
 .card-body:not(:hover) {
@@ -174,8 +174,10 @@ display: none;
 }
 .card-body:hover .card-description-hover{
   display: block;
-  height: 100px;
+  height: auto;
 }
+
+
 
 .card-body:hover .card-description-hover .product-details-hover{
 color: #000;
@@ -206,8 +208,9 @@ color: #000;
 
 .card-description-hover ul,
 .card-description-hover .product-details-hover {
-  margin: 0;
+  margin-left: 0;
   padding: 0;
+  display: inline;
 }
 
 .card-description-hover ul{
@@ -230,20 +233,23 @@ color: #000;
  
 } */
 .card-body:hover .card-description-hover ul {
-  max-height: 100%;
+  /* max-height: 100%; */
+  margin-left: 50px;
+  display: inline;
   /* Allow full height on hover */
  
 }
 /* this */
-.card-body:hover .product-image {
+.card-body:hover .card-img {
   /* width: 300px; */
   /* transition: 0.1s; */
-  /* width: calc(100% -30px ); */
-  height: calc(100% - 30px);
+  /* height: calc(100% - 30px); */
   /* height: 250px; */
-  
-  /* object-fit: contain; */
+  object-fit: cover;
 }
 
+.product-description-hover .list-item {
+  margin-left: 1rem;
+}
 
 
